@@ -50,8 +50,9 @@ const getAllProducts = async (req, res) => {
     });
   }
   //get all products
-  // console.log(queryObject);
+  console.log(queryObject);
   let result = Product.find(queryObject);
+  console.log(result);
   //sort
   if (sort) {
     const sortList = sort.split(",").join(" ");
